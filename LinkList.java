@@ -9,10 +9,13 @@ public class LinkList {
         list.addFirst(56);
         list.add(30);
         list.add(70);
-        list.removeFirst();
+
         Iterator i = list.iterator();
-        while(i.hasNext()){
-            System.out.println(i.next());
+        while (i.hasNext()) {
+            if(list.contains(30)){
+                System.out.println(i.next());
+                break;
+            }
         }
     }
 }
