@@ -7,12 +7,12 @@ public class LinkList {
     public static void main(String[] args) {
         LinkedList list = new LinkedList<Integer>();
         list.addFirst(56);
+        list.add(30);
         list.add(70);
-        list.add(1, 30);
+        list.removeFirst();
         Iterator i = list.iterator();
-        while (i.hasNext()) {
+        while(i.hasNext()){
             System.out.println(i.next());
-
         }
     }
 }
